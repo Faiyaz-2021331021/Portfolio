@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faiyaz's Portfolio with Vanta Fog</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Vanta.js and Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script>
+</head>
+<body>
+  <div id="vanta-bg"></div>
+
+  <div class="intro">
+    <h2>Hi, I'm</h2>
+    <h1>Faiyaz</h1>
+    <p>Competitive Programmer | App Developer | Data Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a 5th-semester Computer Science student passionate about solving problems through code. I enjoy competitive programming, building apps, and exploring data science.</p>
+  </section>
+
+  <section id="interests" class="options">
+    <h2>My Interests</h2>
+    <div class="options-list">
+      <a href="#academics" class="option-item" onclick="toggleSubTabs()">Academics</a>
+      <a href="#projects" class="option-item">Projects</a>
+      <a href="#competitive" class="option-item">Competitive Programming</a>
+      <a href="#leadership" class="option-item">Leadership</a>
+      <a href="#olympiads" class="option-item">Olympiads</a>
+    </div>
+
+    <div id="sub-tabs" style="display: none; text-align: center; margin-top: 10px;">
+      <a href="#semester">Semester-wise Result</a> |
+      <a href="#courses">Courses Taken</a> |
+      <a href="#achievements">Academic Achievements</a>
+    </div>
+  </section>
+
+  
+
+  <footer>
+    <p>Contact Me</p>
+  </footer>
+
+  <script>
+    VANTA.FOG({
+      el: "#vanta-bg",
+      highlightColor: 0x03b0f6,  
+      midtoneColor: 0x1ea5f2,     
+      lowlightColor: 0x0664a2,    
+      baseColor: 0x343945,       
+      blurFactor: 0.8,
+      speed: 1.2,
+      zoom: 1
+    });
+
+    function toggleSubTabs() {
+      const subTabs = document.getElementById("sub-tabs");
+      subTabs.style.display = (subTabs.style.display === "none") ? "block" : "none";
+    }
+  </script>
+</body>
+</html>

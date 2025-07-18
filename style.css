@@ -1,0 +1,87 @@
+
+#vanta-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+}
+
+.intro h1 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.intro {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(205, 221, 236);
+  position: relative;
+  z-index: 1;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  color: #eeeeee;
+  margin: auto;
+}
+
+/* Options Section */
+.options {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  color: #ebebeb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.options-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.option-item {
+  background: #0c66bb;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(12, 102, 187, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.option-item:hover {
+  background-color: #0954a3;
+}
+
+/* Project Card */
+.project-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #222;
+  color: #ccc;
+  padding: 20px;
+}
