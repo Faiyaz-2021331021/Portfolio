@@ -39,7 +39,7 @@
       <a href="#" class="option-item" onclick="toggleProjectInfo()">Projects</a>
       <a href="#" class="option-item" onclick="toggleCPInfo()">Competitive Programming</a>
       <a href="#" class="option-item" onclick="toggleleadershipInfo()">Leadership</a>
-      <a href="#" class="option-item" onclick="toggleolympiadsInfo()">Olympiad</a>
+      <a href="#" class="option-item" onclick="toggleolympiadInfo()">Olympiad</a>
     </div>
 
     
@@ -126,6 +126,22 @@
       </div>
     </div>
 
+    <div id ="olympiad" style="display: none; margin-top: 20px; color: white;">
+      <div class="project-card">
+        <h2>Physics Olympiad</h2>
+        <p>Winner at Physics Olympiad Sylhet Divisional Round 2018</p>
+        <p>20th Postion at Physics Olympiad 2018 </p>
+        <p>5th Position at Physics Olympiad Sylhet Divisional Round 2020</p>
+        <p>2nd position at Metropolitan University CSE Society Physics Olympiad </p>
+      </div>
+
+      <div class="project-card">
+        <h2>Astronomoy Olympiad</h2>
+        <p>3rd position at Space Carnival Astronomoy Olympiad 2017</p>
+        <p>3rd position at Cam-SUST Astronomoy Olympiad 2017</p>
+      </div>
+
+
   <footer>
     <p>Contact Me</p>
   </footer>
@@ -180,7 +196,7 @@
     }
 
     function toggleolympiadInfo() {
-    const info = document.getElementById("olypmiad");
+    const info = document.getElementById("olympiad");
     const isVisible = info.style.display === "block";
 
       info.style.display = isVisible ? "none" : "block";
