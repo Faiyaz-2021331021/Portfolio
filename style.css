@@ -37,7 +37,7 @@ section {
   margin: auto;
 }
 
-/* Options Section */
+
 .options {
   max-width: 800px;
   margin: 40px auto;
@@ -69,16 +69,61 @@ section {
   background-color: #0954a3;
 }
 
-/* Project Card */
-.project-card {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
+
+.education-card {
+  background: #1f1f2f;
   padding: 20px;
-  margin-top: 20px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  max-width: 700px;
 }
 
-/* Footer */
+.project-card {
+  background: #1f1f2f;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  max-width: 700px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+}
+
+.project-card h2 {
+  color: #a4d8ff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+cp h1 {
+  color: #a4d8ff;
+  margin-bottom: 10px;
+}
+
+cp p {
+  color: #a4d8ff;
+  margin-bottom: 10px;
+}
+
+.tech-icons img {
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.2);
+}
+
 footer {
   text-align: center;
   background: #222;

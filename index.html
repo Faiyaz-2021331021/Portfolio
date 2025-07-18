@@ -6,10 +6,13 @@
   <title>Faiyaz's Portfolio with Vanta Fog</title>
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Vanta.js and Three.js -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script>
+
+  
 </head>
+
 <body>
   <div id="vanta-bg"></div>
 
@@ -32,21 +35,96 @@
   <section id="interests" class="options">
     <h2>My Interests</h2>
     <div class="options-list">
-      <a href="#academics" class="option-item" onclick="toggleSubTabs()">Academics</a>
-      <a href="#projects" class="option-item">Projects</a>
-      <a href="#competitive" class="option-item">Competitive Programming</a>
-      <a href="#leadership" class="option-item">Leadership</a>
-      <a href="#olympiads" class="option-item">Olympiads</a>
+      <a href="#" class="option-item" onclick="toggleAcademicInfo()">Academics</a>
+      <a href="#" class="option-item" onclick="toggleProjectInfo()">Projects</a>
+      <a href="#" class="option-item" onclick="toggleCPInfo()">Competitive Programming</a>
+      <a href="#" class="option-item" onclick="toggleleadershipInfo()">Leadership</a>
+      <a href="#" class="option-item" onclick="toggleolympiadsInfo()">Olympiad</a>
     </div>
 
-    <div id="sub-tabs" style="display: none; text-align: center; margin-top: 10px;">
-      <a href="#semester">Semester-wise Result</a> |
-      <a href="#courses">Courses Taken</a> |
-      <a href="#achievements">Academic Achievements</a>
-    </div>
+    
   </section>
 
-  
+  <div id="academic-info" style="display: none; margin-top: 20px; color: white;">
+    <div class="education-card">
+      <h3>Shahjalal University</h3>
+      <p><strong>Degree:</strong> B.Sc. in Computer Science & Engineering</p>
+      <p><strong>Year:</strong> 2021 – Present</p>
+      <p><strong>Result:</strong> CGPA around 3.80 (up to 4th semester)</p>
+    </div>
+
+    <div class="education-card">
+      <h3>Scholarshome College</h3>
+      <p><strong>Degree:</strong> Higher Secondary Certificate</p>
+      <p><strong>Year:</strong> 2019 – 2021</p>
+      <p><strong>Result:</strong> GPA 5.00</p>
+    </div>
+
+    <div class="education-card">
+      <h3>Scholarshome</h3>
+      <p><strong>Degree:</strong> Secondary School Certificate</p>
+      <p><strong>Year:</strong> 2017 – 2018</p>
+      <p><strong>Result:</strong> GPA 5.00</p>
+    </div>
+  </div>
+
+    <div id="projects" style="display: none; margin-top: 20px; color: white;">
+      <div class="project-card">
+      <h2>SUST MAP</h2>
+      <p>
+        An interactive 2D terminal-based map  of Shahjalal University of Science & Technology, built entirely using C++. The project lets users navigate buildings and departments visually using simple key controls — all inside a terminal window.
+      </p>
+        <div class="tech-icons">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++"/>
+        </div>
+      </div>
+
+      <div class = "project-card">
+        <h2>VitaCare</h2>
+          <p>An Health based app to review doctors and hospital to find the best one for yourself(Still in Progress)</p>
+          <div class ="tech-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript"/>
+          </div>
+      </div>
+    </div>
+
+    <div id="cp" style="display: none; margin-top: 20px; color: white;">
+      <div class = "project-card">
+        <h2>Overview</h2>
+        <p>Solved about 1000 problems on different judge</p>
+        <p>Specialist in Codeforces</p>
+        <p>3 Star at Codechef</p>
+      </div>
+
+      <div class = "project-card">
+        <h2>Participations</h2>
+        <p>4 Inter University Programming Contests</p>
+        <p>3 indiviual Programming Contest</p>
+      </div>
+
+      <div class = "project-card">
+        <h2>Special Mentions</h2>
+        <p>Champion at Leading University Inter University Programming Contest</p>
+        <p>10th position at Metropolitan University Inter University Programming Contest</p>
+        <p>10th at Prothom Alo BondhuShava Programming Contest</p>
+        <p>48th at Dhaka regional Preliminary 2024</p>
+      </div>
+
+    </div>
+
+
+    <div id = "leadership" style="display: none; margin-top: 20px; color: white;">
+      <div class="project-card">
+        <h2>Problem Setter at National High School Programming contest 2025</h2>
+      </div>
+      <div class="project-card">
+        <h2>Competitive Programming mentor at SUST Competitive Programming Community</h2>
+      </div>
+      <div class="project-card">
+        <h2>Former Physics olympiad And Science olympiad Trainer At Scholarshome College</h2>
+      </div>
+    </div>
 
   <footer>
     <p>Contact Me</p>
@@ -55,19 +133,64 @@
   <script>
     VANTA.FOG({
       el: "#vanta-bg",
-      highlightColor: 0x03b0f6,  
-      midtoneColor: 0x1ea5f2,     
-      lowlightColor: 0x0664a2,    
-      baseColor: 0x343945,       
+      highlightColor: 0x03b0f6,
+      midtoneColor: 0x1ea5f2,
+      lowlightColor: 0x0664a2,
+      baseColor: 0x343945,
       blurFactor: 0.8,
       speed: 1.2,
       zoom: 1
     });
 
-    function toggleSubTabs() {
-      const subTabs = document.getElementById("sub-tabs");
-      subTabs.style.display = (subTabs.style.display === "none") ? "block" : "none";
+    function toggleAcademicInfo() {
+      const info = document.getElementById("academic-info");
+      const tabs = document.getElementById("sub-tabs");
+
+      const isVisible = info.style.display === "block";
+
+      info.style.display = isVisible ? "none" : "block";
+      tabs.style.display = isVisible ? "none" : "block";
     }
+
+    function toggleProjectInfo(){
+      const info = document.getElementById("projects")
+      const tabs = document.getElementById("sub-tabs");
+
+
+      const isVisible = info.style.display === "block";
+
+      info.style.display = isVisible ? "none" : "block";
+      tabs.style.display = isVisible ? "none" : "block";
+    }
+
+    function toggleCPInfo() {
+    const info = document.getElementById("cp");
+    const isVisible = info.style.display === "block";
+
+      info.style.display = isVisible ? "none" : "block";
+      tabs.style.display = isVisible ? "none" : "block";
+    }
+
+    function toggleleadershipInfo() {
+    const info = document.getElementById("leadership");
+    const isVisible = info.style.display === "block";
+
+      info.style.display = isVisible ? "none" : "block";
+      tabs.style.display = isVisible ? "none" : "block";
+    }
+
+    function toggleolympiadInfo() {
+    const info = document.getElementById("olypmiad");
+    const isVisible = info.style.display === "block";
+
+      info.style.display = isVisible ? "none" : "block";
+      tabs.style.display = isVisible ? "none" : "block";
+    }
+    
   </script>
 </body>
 </html>
+
+
+
+
