@@ -7,33 +7,44 @@
 }
 
 .intro h1 {
-  margin: 0;
-  line-height: 1.2;
+  font-size: 64px;
+  font-weight: 800;
+  margin: 10px 0;
+  color: #2c2e30;
+}
+
+.intro h3 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #2c2e30;
+}
+
+.intro p {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #2c2e30;
 }
 
 .intro {
-  height: 40vh;
+  height: 30vh;
+  font-size: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: rgb(205, 221, 236);
+  color: #2c2e30;
   position: relative;
   z-index: 1;
 }
 
-nav a {
-  color: rgb(255, 255, 255);
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 section {
   padding: 40px 20px;
+  font-size: 24px;
   max-width: 800px;
-  color: #eeeeee;
+  color: #2c2e30;
   margin: auto;
 }
 
@@ -42,7 +53,7 @@ section {
   max-width: 800px;
   margin: 40px auto;
   text-align: center;
-  color: #ebebeb;
+  color: #2c2e30;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -55,8 +66,8 @@ section {
 }
 
 .option-item {
-  background: #0c66bb;
-  color: white;
+  background: #3789d6;
+  color: #2c2e30;
   padding: 12px 24px;
   border-radius: 25px;
   text-decoration: none;
