@@ -65,7 +65,7 @@ section {
 }
 
 .option-item {
-  background: #6deb4e;
+  background: #83d16f;
   color: #0a0a0a;
   padding: 12px 24px;
   border-radius: 25px;
@@ -77,7 +77,7 @@ section {
 
 
 .option-item1 {
-  background: #f3a126;
+  background: #98c2f1;
   color: #0a0a0a;
   padding: 12px 24px;
   border-radius: 25px;
@@ -88,7 +88,7 @@ section {
 }
 
 .option-item2 {
-  background: #48eb9f;
+  background: #7bf3bb;
   color: #0a0a0a;
   padding: 12px 24px;
   border-radius: 25px;
@@ -99,7 +99,7 @@ section {
 }
 
 .option-item3 {
-  background: #cf80e7;
+  background: #d49fe4;
   color: #0a0a0a;
   padding: 12px 24px;
   border-radius: 25px;
@@ -110,7 +110,7 @@ section {
 }
 
 .option-item4 {
-  background: #f1f502;
+  background: #eef071;
   color: #0a0a0a;
   padding: 12px 24px;
   border-radius: 25px;
@@ -124,9 +124,25 @@ section {
   background-color: #094572;
 }
 
+.option-item1:hover {
+  background-color: #094572;
+}
+
+.option-item2:hover {
+  background-color: #094572;
+}
+
+.option-item3:hover {
+  background-color: #094572;
+}
+
+.option-item4:hover {
+  background-color: #094572;
+}
+
 
 .education-card {
-  background: #6deb4e;
+  background: #65cdf7;
   padding: 20px;
   margin: 10px auto;
   border-radius: 10px;
@@ -155,7 +171,7 @@ section {
 
 
 .project-card {
-  background: #f3a126;
+  background: #65cdf7;
   padding: 20px;
   margin: 10px auto;
   border-radius: 10px;
@@ -185,7 +201,7 @@ section {
 
 
 .cp-card {
-  background: #48eb9f;
+  background: #65cdf7;
   padding: 20px;
   margin: 10px auto;
   border-radius: 10px;
@@ -209,6 +225,63 @@ section {
   line-height: 1.6;
   margin-bottom: 15px;
 }
+
+
+
+.leader-card {
+  background: #65cdf7;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(47, 25, 88, 0.4);
+  max-width: 700px;
+}
+
+.leader-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px #65cdf7;
+}
+
+.leader-card h2 {
+  color: #020607;
+  margin-bottom: 10px;
+}
+
+.leader-card p {
+  color: #030607;
+  font-size: 21px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
+.olympiad-card {
+  background: #65cdf7;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(47, 25, 88, 0.4);
+  max-width: 700px;
+}
+
+.olympiad-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px #65cdf7;
+}
+
+.olympiad-card h2 {
+  color: #020607;
+  margin-bottom: 10px;
+}
+
+.olympiad-card p {
+  color: #030607;
+  font-size: 21px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
 
 .tech-icons img {
   height: 40px;
