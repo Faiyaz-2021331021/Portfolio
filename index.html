@@ -6,11 +6,89 @@
   <title>Faiyaz's Portfolio with Vanta Fog</title>
   <link rel="stylesheet" href="style.css" />
 
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script>
 
-  
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    #vanta-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    #about, #interests {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    details {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      backdrop-filter: blur(5px);
+    }
+
+    summary {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    details[open] summary {
+      color: #65cdf7;
+    }
+
+    .education-card, .project-card, .cp-card, .leader-card, .olympiad-card {
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #111;
+      color: white;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #65cdf7;
+      text-decoration: none;
+    }
+
+    .social-links {
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social-links img {
+      vertical-align: middle;
+      transition: transform 0.2s ease;
+    }
+
+    .social-links img:hover {
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 
 <body>
@@ -20,207 +98,134 @@
     <h3>Hi, I'm</h3>
     <h1>Faiyaz Ismail</h1>
     <p>Competitive Programmer | App Developer | Data Enthusiast</p>
-
   </div>
 
   <section id="about">
-  <p>
-  A forward-thinking problem solver with a strong foundation in Computer Science and an insatiable curiosity for how things work. I thrive in logic, creativity, and systems that impact lives.
-    <br><br>
+    <p>
+      A forward-thinking problem solver with a strong foundation in Computer Science and an insatiable curiosity for how things work. I thrive in logic, creativity, and systems that impact lives.
+      <br><br>
       From building interactive terminal tools to shaping meaningful apps, I merge analytical thinking with purpose-driven innovation. A believer in consistency, collaboration, and continuous growth.
     </p>
   </section>
 
-  <section id="interests" class="options">
+  <section id="interests">
     <h2>More About Me</h2>
-    <p>Click on any card to learn more about each aspect</p>
-    <div class="options-list">
-      <button class="option-item" onclick="toggleAcademicInfo()">Academics</button>
-      <button class="option-item1" onclick="toggleProjectInfo()">Projects</button>
-      <button class="option-item2" onclick="toggleCPInfo()">Competitive Programming</button>
-      <button class="option-item3" onclick="toggleleadershipInfo()">Leadership</button>
-      <button class="option-item4" onclick="toggleolympiadInfo()">Olympiad</button>
-    </div>
+    <p>Click to expand each section:</p>
 
-    
-  </section>
+    <details>
+      <summary>Academics</summary>
+      <div class="education-card">
+        <h2>Shahjalal University of Science and Technology</h2>
+        <p><strong>Degree:</strong> B.Sc. in Computer Science & Engineering</p>
+        <p><strong>Year:</strong> 2021 – Present</p>
+        <p><strong>Result:</strong> CGPA around 3.80 (up to 4th semester)</p>
+      </div>
+      <div class="education-card">
+        <h2>Scholarshome College</h2>
+        <p><strong>Degree:</strong> Higher Secondary Certificate</p>
+        <p><strong>Year:</strong> 2019 – 2021</p>
+        <p><strong>Result:</strong> GPA 5.00</p>
+      </div>
+      <div class="education-card">
+        <h2>Scholarshome</h2>
+        <p><strong>Degree:</strong> Secondary School Certificate</p>
+        <p><strong>Year:</strong> 2017 – 2018</p>
+        <p><strong>Result:</strong> GPA 5.00</p>
+      </div>
+    </details>
 
-  <div id="academic-info" style="display: none; margin-top: 20px; color: rgb(20, 19, 19);">
-    <div class="education-card">
-      <h2>Shahjalal University</h2>
-      <p><strong>Degree:</strong> B.Sc. in Computer Science & Engineering</p>
-      <p><strong>Year:</strong> 2021 – Present</p>
-      <p><strong>Result:</strong> CGPA around 3.80 (up to 4th semester)</p>
-    </div>
-
-    <div class="education-card">
-      <h2>Scholarshome College</h2>
-      <p><strong>Degree:</strong> Higher Secondary Certificate</p>
-      <p><strong>Year:</strong> 2019 – 2021</p>
-      <p><strong>Result:</strong> GPA 5.00</p>
-    </div>
-
-    <div class="education-card">
-      <h2>Scholarshome</h2>
-      <p><strong>Degree:</strong> Secondary School Certificate</p>
-      <p><strong>Year:</strong> 2017 – 2018</p>
-      <p><strong>Result:</strong> GPA 5.00</p>
-    </div>
-  </div>
-
-    <div id="projects" style="display: none; margin-top: 20px; color: #65cdf7;">
+    <details>
+      <summary>Projects</summary>
       <div class="project-card">
-      <h2>SUST MAP</h2>
-      <p>
-        An interactive 2D terminal-based map  of Shahjalal University of Science & Technology, built entirely using C++. The project lets users navigate buildings and departments visually using simple key controls — all inside a terminal window.
-      </p>
-        <div class="tech-icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++"/>
-        </div>
+        <h2>SUST MAP</h2>
+        <p>
+          An interactive 2D terminal-based map of Shahjalal University of Science & Technology, built entirely using C++. Navigate buildings and departments visually inside a terminal window.
+        </p>
       </div>
-
-      <div class = "project-card">
+      <div class="project-card">
         <h2>VitaCare</h2>
-          <p>An Health based app to review doctors and hospital to find the best one for yourself(Still in Progress)</p>
-          <div class ="tech-icons">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript"/>
-          </div>
+        <p>
+          A health-based app to review doctors and hospitals to find the best one for yourself (Still in Progress).
+        </p>
       </div>
-    </div>
+    </details>
 
-    <div id="cp" style="display: none; margin-top: 20px; color: #0c1316;">
-      <div class = "cp-card">
+    <details>
+      <summary>Competitive Programming</summary>
+      <div class="cp-card">
         <h2>Overview</h2>
-        <p>Solved about 1000 problems on different judge</p>
-        <p>Specialist in Codeforces</p>
-        <p>3 Star at Codechef</p>
+        <p>Solved about 1000 problems on different judges</p>
+        <p>Specialist on Codeforces | 3★ on Codechef</p>
       </div>
-
-      <div class = "cp-card">
+      <div class="cp-card">
         <h2>Participations</h2>
         <p>4 Inter University Programming Contests</p>
-        <p>3 indiviual Programming Contest</p>
+        <p>3 Individual Programming Contests</p>
       </div>
-
-      <div class = "cp-card">
+      <div class="cp-card">
         <h2>Special Mentions</h2>
-        <p>Champion at Leading University Inter University Programming Contest</p>
-        <p>10th position at Metropolitan University Inter University Programming Contest</p>
-        <p>10th at Prothom Alo BondhuShava Programming Contest</p>
-        <p>48th at Dhaka regional Preliminary 2024</p>
+        <p>Champion at Leading University IUPC</p>
+        <p>10th at Metropolitan University IUPC</p>
+        <p>10th at Prothom Alo BondhuShava 2023</p>
+        <p>48th at Dhaka Regional Preliminary 2024</p>
       </div>
+    </details>
 
-    </div>
-
-
-    <div id = "leadership" style="display: none; margin-top: 20px; color: #65cdf7;">
+    <details>
+      <summary>Leadership</summary>
       <div class="leader-card">
-        <h2>Problem Setter at National High School Programming contest 2025</h2>
+        <p>Problem Setter at National High School Programming Contest 2025</p>
+        <p>Mentor at SUST Competitive Programming Community</p>
+        <p>Former Trainer at Scholarshome College (Physics & Science Olympiad)</p>
       </div>
-      <div class="leader-card">
-        <h2>Competitive Programming mentor at SUST Competitive Programming Community</h2>
-      </div>
-      <div class="leader-card">
-        <h2>Former Physics olympiad And Science olympiad Trainer At Scholarshome College</h2>
-      </div>
-    </div>
+    </details>
 
-    <div id ="olympiad" style="display: none; margin-top: 20px; color: #65cdf7;">
+    <details>
+      <summary>Olympiad</summary>
       <div class="olympiad-card">
         <h2>Physics Olympiad</h2>
-        <p>Winner at Physics Olympiad Sylhet Divisional Round 2018</p>
-        <p>20th Postion at Physics Olympiad 2018 </p>
-        <p>5th Position at Physics Olympiad Sylhet Divisional Round 2020</p>
-        <p>2nd position at Metropolitan University CSE Society Physics Olympiad </p>
+        <p>Winner at Sylhet Divisional Round 2018</p>
+        <p>20th National Position in 2018</p>
+        <p>5th in Sylhet Divisional Round 2020</p>
+        <p>2nd at Metropolitan University CSE Society Olympiad</p>
       </div>
-
       <div class="olympiad-card">
-        <h2>Astronomoy Olympiad</h2>
-        <p>3rd position at Space Carnival Astronomoy Olympiad 2017</p>
-        <p>3rd position at Cam-SUST Astronomoy Olympiad 2019</p>
+        <h2>Astronomy Olympiad</h2>
+        <p>3rd at Space Carnival 2017</p>
+        <p>3rd at Cam-SUST Astronomy Olympiad 2019</p>
       </div>
-    </div>
-
+    </details>
+  </section>
 
   <footer>
     <h1>Contact Me</h1>
-    <h3>Phone:01767665556</h3>
-    <h3>Email: <a href="mailtoismailfaiayz111@gmail.com">ismailfaiyaz111@gmail.com</ahref></h3>
-    
+    <h3>Phone: <a href="tel:+8801767665556">01767665556</a></h3>
+    <h3>Email: <a href="mailto:ismailfaiyaz111@gmail.com">ismailfaiyaz111@gmail.com</a></h3>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/faiyaz-ismail-a73210307" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" title="LinkedIn" width="30" />
+      </a>
+      <a href="https://github.com/Faiyaz-2021331021" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub" width="30" />
+      </a>
+      <a href="https://www.facebook.com/EviL.DHe.MaN/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" title="Facebook" width="30" />
+      </a>
+    </div>
   </footer>
 
   <script>
-  VANTA.FOG({
-    el: "#vanta-bg",
-    highlightColor: 0x034489,
-    midtoneColor: 0x013e2e,
-    lowlightColor: 0x00402f,
-    baseColor: 0x011020,
-    blurFactor: 0.8,
-    speed: 1.2,
-    zoom: 1
-  });
-
-  
-  function hideAllSections() {
-    const sections = [
-      "academic-info",
-      "projects",
-      "cp",
-      "leadership",
-      "olympiad"
-    ];
-
-    for (const id of sections) {
-      const element = document.getElementById(id);
-      if (element) element.style.display = "none";
-    }
-  }
-
-  function toggleAcademicInfo() {
-    const info = document.getElementById("academic-info");
-    const isVisible = info.style.display === "block";
-
-    hideAllSections();
-    if (!isVisible) info.style.display = "block";
-  }
-
-  function toggleProjectInfo() {
-    const info = document.getElementById("projects");
-    const isVisible = info.style.display === "block";
-
-    hideAllSections();
-    if (!isVisible) info.style.display = "block";
-  }
-
-  function toggleCPInfo() {
-    const info = document.getElementById("cp");
-    const isVisible = info.style.display === "block";
-
-    hideAllSections();
-    if (!isVisible) info.style.display = "block";
-  }
-
-  function toggleleadershipInfo() {
-    const info = document.getElementById("leadership");
-    const isVisible = info.style.display === "block";
-
-    hideAllSections();
-    if (!isVisible) info.style.display = "block";
-  }
-
-  function toggleolympiadInfo() {
-    const info = document.getElementById("olympiad");
-    const isVisible = info.style.display === "block";
-
-    hideAllSections();
-    if (!isVisible) info.style.display = "block";
-  }
-</script>
+    VANTA.FOG({
+      el: "#vanta-bg",
+      highlightColor: 0x034489,
+      midtoneColor: 0x013e2e,
+      lowlightColor: 0x00402f,
+      baseColor: 0x011020,
+      blurFactor: 0.8,
+      speed: 1.2,
+      zoom: 1
+    });
+  </script>
 </body>
 </html>
-
-
-
-

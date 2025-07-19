@@ -303,9 +303,32 @@ section {
 
 
 footer {
-  margin-top: auto;
   padding: 20px;
-  background: #65cdf7;
-  color: rgb(10, 6, 6);
-  /* text-align: center; */
+  text-align: center;
+  background-color: #111;
+  color: white;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #65cdf7;
+  text-decoration: none;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+footer .social-links img {
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+footer .social-links img:hover {
+  transform: scale(1.2);
 }
