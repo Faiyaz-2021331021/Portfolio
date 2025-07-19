@@ -12,3 +12,4 @@ function toggleSubTabs() {
   const subTabs = document.getElementById("sub-tabs");
   subTabs.style.display = (subTabs.style.display === "none") ? "block" : "none";
 }
+

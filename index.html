@@ -35,11 +35,11 @@
     <h2>More About Me</h2>
     <p>Click on any card to learn more about each aspect</p>
     <div class="options-list">
-      <a href="#" class="option-item" onclick="toggleAcademicInfo()">Academics</a>
-      <a href="#" class="option-item1" onclick="toggleProjectInfo()">Projects</a>
-      <a href="#" class="option-item2" onclick="toggleCPInfo()">Competitive Programming</a>
-      <a href="#" class="option-item3" onclick="toggleleadershipInfo()">Leadership</a>
-      <a href="#" class="option-item4" onclick="toggleolympiadInfo()">Olympiad</a>
+      <button class="option-item" onclick="toggleAcademicInfo()">Academics</button>
+      <button class="option-item1" onclick="toggleProjectInfo()">Projects</button>
+      <button class="option-item2" onclick="toggleCPInfo()">Competitive Programming</button>
+      <button class="option-item3" onclick="toggleleadershipInfo()">Leadership</button>
+      <button class="option-item4" onclick="toggleolympiadInfo()">Olympiad</button>
     </div>
 
     
@@ -138,8 +138,9 @@
       <div class="olympiad-card">
         <h2>Astronomoy Olympiad</h2>
         <p>3rd position at Space Carnival Astronomoy Olympiad 2017</p>
-        <p>3rd position at Cam-SUST Astronomoy Olympiad 2017</p>
+        <p>3rd position at Cam-SUST Astronomoy Olympiad 2019</p>
       </div>
+    </div>
 
 
   <footer>
@@ -147,63 +148,73 @@
   </footer>
 
   <script>
-    VANTA.FOG({
-      el: "#vanta-bg",
-      highlightColor: 0x034489,
-      midtoneColor: 0x013e2e,
-      lowlightColor: 0x00402f,
-      baseColor: 0x011020,
-      blurFactor: 0.8,
-      speed: 1.2,
-      zoom: 1
-    });
+  VANTA.FOG({
+    el: "#vanta-bg",
+    highlightColor: 0x034489,
+    midtoneColor: 0x013e2e,
+    lowlightColor: 0x00402f,
+    baseColor: 0x011020,
+    blurFactor: 0.8,
+    speed: 1.2,
+    zoom: 1
+  });
 
-    function toggleAcademicInfo() {
-      const info = document.getElementById("academic-info");
-      const tabs = document.getElementById("sub-tabs");
+  
+  function hideAllSections() {
+    const sections = [
+      "academic-info",
+      "projects",
+      "cp",
+      "leadership",
+      "olympiad"
+    ];
 
-      const isVisible = info.style.display === "block";
-
-      info.style.display = isVisible ? "none" : "block";
-      tabs.style.display = isVisible ? "none" : "block";
+    for (const id of sections) {
+      const element = document.getElementById(id);
+      if (element) element.style.display = "none";
     }
+  }
 
-    function toggleProjectInfo(){
-      const info = document.getElementById("projects")
-      const tabs = document.getElementById("sub-tabs");
+  function toggleAcademicInfo() {
+    const info = document.getElementById("academic-info");
+    const isVisible = info.style.display === "block";
 
+    hideAllSections();
+    if (!isVisible) info.style.display = "block";
+  }
 
-      const isVisible = info.style.display === "block";
+  function toggleProjectInfo() {
+    const info = document.getElementById("projects");
+    const isVisible = info.style.display === "block";
 
-      info.style.display = isVisible ? "none" : "block";
-      tabs.style.display = isVisible ? "none" : "block";
-    }
+    hideAllSections();
+    if (!isVisible) info.style.display = "block";
+  }
 
-    function toggleCPInfo() {
+  function toggleCPInfo() {
     const info = document.getElementById("cp");
     const isVisible = info.style.display === "block";
 
-      info.style.display = isVisible ? "none" : "block";
-      tabs.style.display = isVisible ? "none" : "block";
-    }
+    hideAllSections();
+    if (!isVisible) info.style.display = "block";
+  }
 
-    function toggleleadershipInfo() {
+  function toggleleadershipInfo() {
     const info = document.getElementById("leadership");
     const isVisible = info.style.display === "block";
 
-      info.style.display = isVisible ? "none" : "block";
-      tabs.style.display = isVisible ? "none" : "block";
-    }
+    hideAllSections();
+    if (!isVisible) info.style.display = "block";
+  }
 
-    function toggleolympiadInfo() {
+  function toggleolympiadInfo() {
     const info = document.getElementById("olympiad");
     const isVisible = info.style.display === "block";
 
-      info.style.display = isVisible ? "none" : "block";
-      tabs.style.display = isVisible ? "none" : "block";
-    }
-    
-  </script>
+    hideAllSections();
+    if (!isVisible) info.style.display = "block";
+  }
+</script>
 </body>
 </html>
 
