@@ -9,87 +9,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-    }
-
-    #vanta-bg {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-
-    .intro {
-      text-align: center;
-      padding: 60px 20px 20px;
-    }
-
-    #about, #interests {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    details {
-      background: rgba(255, 255, 255, 0.1);
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 8px;
-      backdrop-filter: blur(5px);
-    }
-
-    summary {
-      font-size: 1.2em;
-      font-weight: bold;
-      cursor: pointer;
-      margin-bottom: 10px;
-    }
-
-    details[open] summary {
-      color: #65cdf7;
-    }
-
-    .education-card, .project-card, .cp-card, .leader-card, .olympiad-card {
-      margin-bottom: 15px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background: #111;
-      color: white;
-      margin-top: 50px;
-    }
-
-    footer a {
-      color: #65cdf7;
-      text-decoration: none;
-    }
-
-    .social-links {
-      margin-top: 10px;
-    }
-
-    .social-links a {
-      margin: 0 10px;
-      display: inline-block;
-    }
-
-    .social-links img {
-      vertical-align: middle;
-      transition: transform 0.2s ease;
-    }
-
-    .social-links img:hover {
-      transform: scale(1.2);
-    }
-  </style>
+  
 </head>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#contacts">Contact</a></li>
+  </ul>
+</nav>
 
 <body>
   <div id="vanta-bg"></div>
@@ -197,7 +126,7 @@
     </details>
   </section>
 
-  <footer>
+  <footer id = "contacts">
     <h1>Contact Me</h1>
     <h3>Phone: <a href="tel:+8801767665556">01767665556</a></h3>
     <h3>Email: <a href="mailto:ismailfaiyaz111@gmail.com">ismailfaiyaz111@gmail.com</a></h3>
