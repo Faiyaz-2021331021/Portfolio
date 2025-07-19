@@ -51,6 +51,11 @@
       margin-bottom: 15px;
       /* background-color: #fbfafc; */
     }
+    
+    .project-card a{
+      color : #04c289;
+      text-decoration: none;
+    }
   
     .education-card h2,.project-card h2,.leader-card h2,.olympiad-card h2,.cp-card h2{
       font-size: 28px;
