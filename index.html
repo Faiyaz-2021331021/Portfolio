@@ -4,174 +4,308 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Faiyaz's Portfolio with Vanta Fog</title>
+  <title>Faiyaz Ismail | Competitive Programmer &amp; App Developer</title>
+  <meta name="description"
+    content="Portfolio of Faiyaz Ismail: Computer Science &amp; Engineering student at SUST, competitive programmer and app developer." />
+  <meta name="theme-color" content="#011020" />
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23011020'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='700' text-anchor='middle' fill='%2303f1b6'%3EFI%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script>
-
-
 </head>
-
-<nav class="navbar">
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#contacts">Contact</a></li>
-  </ul>
-</nav>
 
 <body>
   <div id="vanta-bg"></div>
 
-  <div class="intro">
-    <h3>Hi, I'm</h3>
-    <h1>Faiyaz Ismail</h1>
-    <p>Competitive Programmer | App Developer | Data Enthusiast</p>
-  </div>
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Back to top">
+      <span class="brand-mark">FI</span>
+      <span class="brand-text">Faiyaz Ismail</span>
+    </a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#academics">Academics</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#cp">CP</a></li>
+      <li><a href="#contacts">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section id="about">
-    <p>
-      A forward-thinking problem solver with a strong foundation in Computer Science and an insatiable curiosity for how
-      things work. I thrive in logic, creativity, and systems that impact lives.
-      <br><br>
-      From building interactive terminal tools to shaping meaningful apps, I merge analytical thinking with
-      purpose-driven innovation. A believer in consistency, collaboration, and continuous growth.
-    </p>
-  </section>
+  <main>
+    <!-- ===== Hero ===== -->
+    <header class="intro" id="home">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Faiyaz Ismail</h1>
+      <ul class="roles">
+        <li>Competitive Programmer</li>
+        <li>App Developer</li>
+        <li>Data Enthusiast</li>
+      </ul>
 
-  <section id="interests">
-    <h2>More About Me</h2>
-    <p>Click to expand each section:</p>
-
-    <details>
-      <summary>Academics</summary>
-      <div class="education-card">
-        <h2>Shahjalal University of Science and Technology</h2>
-        <p><strong>Degree:</strong> B.Sc. in Computer Science & Engineering</p>
-        <p><strong>Year:</strong> 2021 – Present</p>
-        <p><strong>Result:</strong> CGPA 3.82 (up to 6th semester)</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="#contacts">Contact Me</a>
       </div>
-      <div class="education-card">
-        <h2>Scholarshome College</h2>
-        <p><strong>Degree:</strong> Higher Secondary Certificate</p>
-        <p><strong>Year:</strong> 2019 – 2021</p>
-        <p><strong>Result:</strong> GPA 5.00</p>
-      </div>
-      <div class="education-card">
-        <h2>Scholarshome</h2>
-        <p><strong>Degree:</strong> Secondary School Certificate</p>
-        <p><strong>Year:</strong> 2017 – 2018</p>
-        <p><strong>Result:</strong> GPA 5.00</p>
-      </div>
-    </details>
 
-    <details>
-      <summary>Projects</summary>
-      <div class="project-card">
-        <h2><a href="https://github.com/Faiyaz-2021331021/University_Maping" target="_blank"
-            style="text-decoration: none; color: inherit;">SUST MAP</a></h2>
-        <p>
-          An interactive 2D terminal-based map of Shahjalal University of Science & Technology, built entirely using
-          C++. Navigate buildings and departments visually inside a terminal window.
+      <div class="stats">
+        <div class="stat"><strong>Specialist</strong><span>Codeforces</span></div>
+        <div class="stat"><strong>3★</strong><span>CodeChef</span></div>
+        <div class="stat"><strong>~1500</strong><span>Problems solved</span></div>
+        <div class="stat"><strong>3.82</strong><span>CGPA (6 semesters)</span></div>
+      </div>
+    </header>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        A forward-thinking problem solver with a strong foundation in Computer Science and an insatiable curiosity for
+        how things work. I thrive in logic, creativity, and systems that impact lives.
+      </p>
+      <p>
+        From building interactive terminal tools to shaping meaningful apps, I merge analytical thinking with
+        purpose-driven innovation. A believer in consistency, collaboration, and continuous growth.
+      </p>
+    </section>
+
+    <!-- ===== Background & achievements ===== -->
+    <section id="interests" class="section">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Background &amp; Achievements</h2>
+          <p class="hint">Click a section to expand it.</p>
+        </div>
+        <button class="btn btn-ghost btn-small" id="toggle-all" type="button">Expand all</button>
+      </div>
+
+      <details id="academics">
+        <summary>Academics</summary>
+        <div class="card-grid">
+          <div class="education-card">
+            <div class="card-head">
+              <h3>Shahjalal University of Science and Technology</h3>
+              <span class="chip">2021 – Present</span>
+            </div>
+            <p><strong>Degree:</strong> B.Sc. in Computer Science &amp; Engineering</p>
+            <p><strong>Result:</strong> CGPA 3.82 (up to 6th semester)</p>
+          </div>
+          <div class="education-card">
+            <div class="card-head">
+              <h3>Scholarshome College</h3>
+              <span class="chip">2019 – 2021</span>
+            </div>
+            <p><strong>Degree:</strong> Higher Secondary Certificate</p>
+            <p><strong>Result:</strong> GPA 5.00</p>
+          </div>
+          <div class="education-card">
+            <div class="card-head">
+              <h3>Scholarshome</h3>
+              <span class="chip">2017 – 2018</span>
+            </div>
+            <p><strong>Degree:</strong> Secondary School Certificate</p>
+            <p><strong>Result:</strong> GPA 5.00</p>
+          </div>
+        </div>
+      </details>
+
+      <details id="projects" open>
+        <summary>Projects</summary>
+        <div class="card-grid">
+
+          <div class="project-card">
+            <h3><a href="https://sustcpgeeks.me/" target="_blank" rel="noopener">SUST CP Geeks</a></h3>
+            <div class="tags">
+              <span class="tag live">● Live</span>
+              <span class="tag">Competitive Programming</span>
+              <span class="tag">SUST</span>
+            </div>
+            <p>
+              A website for the competitive programming community of Shahjalal University of Science &amp; Technology.
+              It brings together upcoming contests, team announcements and other CP updates in one place.
+            </p>
+            <div class="card-links">
+              <a href="https://sustcpgeeks.me/" target="_blank" rel="noopener">Live Site</a>
+              <a href="https://github.com/sust-cp-geeks" target="_blank" rel="noopener">GitHub Organization</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3><a href="https://github.com/Faiyaz-2021331021/University_Maping" target="_blank"
+                rel="noopener">SUST Map</a></h3>
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">Terminal App</span>
+            </div>
+            <p>
+              An interactive 2D terminal-based map of Shahjalal University of Science &amp; Technology, built entirely
+              in C++. Navigate buildings and departments visually inside a terminal window.
+            </p>
+            <div class="card-links">
+              <a href="https://github.com/Faiyaz-2021331021/University_Maping" target="_blank" rel="noopener">View on
+                GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3><a href="https://github.com/Faiyaz-2021331021/VitaCare" target="_blank" rel="noopener">VitaCare</a>
+            </h3>
+            <div class="tags">
+              <span class="tag">Health</span>
+              <span class="tag">Reviews</span>
+            </div>
+            <p>
+              A health-focused app for reviewing doctors and hospitals, so you can find the best one for yourself.
+            </p>
+            <div class="card-links">
+              <a href="https://github.com/Faiyaz-2021331021/VitaCare" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3><a href="https://github.com/Faiyaz-2021331021/SUSTCalender" target="_blank" rel="noopener">Uni
+                Calendar</a></h3>
+            <div class="tags">
+              <span class="tag">Scheduling</span>
+              <span class="tag">University</span>
+            </div>
+            <p>
+              A universal and personal calendar for everyone at the university (teachers, students, staff and admins)
+              to keep track of daily activities, with academic scheduling for teachers and students.
+            </p>
+            <div class="card-links">
+              <a href="https://github.com/Faiyaz-2021331021/SUSTCalender" target="_blank" rel="noopener">View on
+                GitHub</a>
+            </div>
+          </div>
+
+        </div>
+        <p class="more">
+          <a class="btn btn-ghost" href="https://github.com/Faiyaz-2021331021?tab=repositories" target="_blank"
+            rel="noopener">See more of my work on GitHub →</a>
         </p>
-        <p><a href="https://github.com/Faiyaz-2021331021/University_Maping" target="_blank">View on GitHub</a></p>
-      </div>
-      <div class="project-card">
-        <h2><a href="https://github.com/Faiyaz-2021331021/VitaCare" target="_blank"
-            style="text-decoration: none; color: inherit;">VitaCare</a></h2>
-        <p>
-          A health-based app to review doctors and hospitals to find the best one for yourself.
-        </p>
-        <p><a href="https://github.com/Faiyaz-2021331021/VitaCare" target="_blank">View on GitHub</a></p>
-      </div>
-      <div class="project-card">
-        <h2><a href="https://github.com/Faiyaz-2021331021/SUSTCalender" target="_blank"
-            style="text-decoration: none; color: inherit;">Uni Calender</a></h2>
-        <p>
-          A universal and personal calender for all personal in university (teacher, student, staff, admin) to keep
-          track of everyday activity and academic scheduling for teachers and students.
-        </p>
-        <p><a href="https://github.com/Faiyaz-2021331021/SUSTCalender" target="_blank">View on GitHub</a></p>
-      </div>
-      <div class="project-card">
-        <br></br>
-        <p>See more of my work at: <a
-            href="https://github.com/Faiyaz-2021331021?tab=repositories">https://github.com/Faiyaz-2021331021?tab=repositories</a>
-        </p>
-      </div>
-    </details>
+      </details>
 
-    <details>
-      <summary>Competitive Programming</summary>
-      <div class="cp-card">
-        <h2>Overview</h2>
-        <p>Solved about 1500 problems on different judges</p>
-        <p>Specialist on Codeforces | 3★ on Codechef</p>
-      </div>
-      <div class="cp-card">
-        <h2>Participations</h2>
-        <p>5 Inter University Programming Contests</p>
-        <p>3 Individual Programming Contests</p>
-      </div>
-      <div class="cp-card">
-        <h2>Special Mentions</h2>
-        <p>Champion at Leading University IUPC</p>
-        <p>15th at ICPC Dhaka Regional Preliminary 2026</p>
-        <p>10th at Metropolitan University IUPC 2024</p>
-        <p>27th at SUST IUPC 2026</p>
-        <p>10th at Prothom Alo BondhuShava Programming Contest 2023</p>
-      </div>
-    </details>
+      <details id="cp">
+        <summary>Competitive Programming</summary>
+        <div class="card-grid">
+          <div class="cp-card">
+            <h3>Overview</h3>
+            <ul class="list">
+              <li>Solved about 1500 problems on different judges</li>
+              <li>Specialist on Codeforces</li>
+              <li>3★ on CodeChef</li>
+            </ul>
+          </div>
+          <div class="cp-card">
+            <h3>Participations</h3>
+            <ul class="list">
+              <li>5 Inter University Programming Contests</li>
+              <li>3 Individual Programming Contests</li>
+            </ul>
+          </div>
+          <div class="cp-card">
+            <h3>Special Mentions</h3>
+            <ul class="list">
+              <li>Champion at Leading University IUPC</li>
+              <li>15th at ICPC Dhaka Regional Preliminary 2026</li>
+              <li>10th at Metropolitan University IUPC 2024</li>
+              <li>27th at SUST IUPC 2026</li>
+              <li>10th at Prothom Alo BondhuShava Programming Contest 2023</li>
+            </ul>
+          </div>
+        </div>
+      </details>
 
-    <details>
-      <summary>Leadership</summary>
-      <div class="leader-card">
-        <p>Problem Setter at National High School Programming Contest(NHSPC) 2025</p>
-        <p>Mentor at SUST Competitive Programming Community(SCPC)</p>
-        <p>Problem Setter and Judge at INTRA SUST Programming contest 2026</p>
-        <p>Problem Setter and Judge at Regional Programming contest 2026 organized by BCC</p>
-      </div>
-    </details>
+      <details id="leadership">
+        <summary>Leadership</summary>
+        <div class="leader-card">
+          <ul class="list">
+            <li>Problem Setter at National High School Programming Contest (NHSPC) 2025</li>
+            <li>Mentor at SUST Competitive Programming Community (SCPC)</li>
+            <li>Problem Setter and Judge at Intra SUST Programming Contest 2026</li>
+            <li>Problem Setter and Judge at Regional Programming Contest 2026 organized by BCC</li>
+          </ul>
+        </div>
+      </details>
 
-    <details>
-      <summary>Olympiad</summary>
-      <div class="olympiad-card">
-        <h2>Physics Olympiad</h2>
-        <p>Winner at Sylhet Divisional Round 2018</p>
-        <p>20th position at National Round 2018</p>
-        <p>5th position at Sylhet Divisional Round 2020</p>
-        <p>2nd position at Metropolitan University CSE Society Physics Olympiad</p>
-      </div>
-      <div class="olympiad-card">
-        <h2>Astronomy Olympiad</h2>
-        <p>3rd position at Space Carnival Astronomy Olympiad 2017</p>
-        <p>3rd position at Cam-SUST Astronomy Olympiad 2019</p>
-      </div>
-    </details>
-  </section>
+      <details id="olympiad">
+        <summary>Olympiad</summary>
+        <div class="card-grid">
+          <div class="olympiad-card">
+            <h3>Physics Olympiad</h3>
+            <ul class="list">
+              <li>Winner at Sylhet Divisional Round 2018</li>
+              <li>20th position at National Round 2018</li>
+              <li>5th position at Sylhet Divisional Round 2020</li>
+              <li>2nd position at Metropolitan University CSE Society Physics Olympiad</li>
+            </ul>
+          </div>
+          <div class="olympiad-card">
+            <h3>Astronomy Olympiad</h3>
+            <ul class="list">
+              <li>3rd position at Space Carnival Astronomy Olympiad 2017</li>
+              <li>3rd position at Cam-SUST Astronomy Olympiad 2019</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+    </section>
+  </main>
 
+  <!-- ===== Contact ===== -->
   <footer id="contacts">
-    <h1>Contact Me</h1>
-    <h3>Phone: <a href="tel:+8801767665556">01767665556</a></h3>
-    <h3>Email: <a href="mailto:ismailfaiyaz111@gmail.com">ismailfaiyaz111@gmail.com</a></h3>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/faiyaz-ismail-a73210307" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"
-          title="LinkedIn" width="30" />
+    <h2>Get in Touch</h2>
+    <p class="footer-note">Open to collaborations, contests and conversations. Reach out any time.</p>
+
+    <div class="contact-list">
+      <a class="contact-item" href="tel:+8801767665556">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path
+            d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" />
+        </svg>
+        01767665556
       </a>
-      <a href="https://github.com/Faiyaz-2021331021" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
-          title="GitHub" width="30" />
-      </a>
-      <a href="https://www.facebook.com/EviL.DHe.MaN/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" title="Facebook"
-          width="30" />
+      <a class="contact-item" href="mailto:ismailfaiyaz111@gmail.com">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
+          <path d="M22 6l-10 7L2 6" />
+        </svg>
+        ismailfaiyaz111@gmail.com
       </a>
     </div>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/faiyaz-ismail-a73210307" target="_blank" rel="noopener"
+        aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"
+          title="LinkedIn" width="26" height="26" />
+      </a>
+      <a href="https://github.com/Faiyaz-2021331021" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+          title="GitHub" width="26" height="26" />
+      </a>
+      <a href="https://www.facebook.com/EviL.DHe.MaN/" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook"
+          title="Facebook" width="26" height="26" />
+      </a>
+    </div>
+
+    <p class="copyright">© 2026 Faiyaz Ismail. All rights reserved.</p>
   </footer>
 
+  <!-- Background animation -->
   <script>
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     VANTA.FOG({
       el: "#vanta-bg",
       highlightColor: 0x034489,
@@ -179,9 +313,58 @@
       lowlightColor: 0x00402f,
       baseColor: 0x011020,
       blurFactor: 0.8,
-      speed: 1.2,
+      speed: reduceMotion ? 0 : 1.2,
       zoom: 1
     });
+  </script>
+
+  <!-- Page behaviour (kept separate so it still works if the background fails to load) -->
+  <script>
+    (function () {
+      var links = Array.prototype.slice.call(document.querySelectorAll(".navbar ul a"));
+
+      // Open a collapsed section when its nav link is clicked or the URL has its #id
+      function openTarget(id) {
+        var el = id && document.getElementById(id);
+        if (el && el.tagName === "DETAILS") el.open = true;
+      }
+      links.forEach(function (a) {
+        a.addEventListener("click", function () {
+          openTarget(a.getAttribute("href").slice(1));
+        });
+      });
+      window.addEventListener("hashchange", function () { openTarget(location.hash.slice(1)); });
+      openTarget(location.hash.slice(1));
+
+      // Highlight the nav link of the section currently in view
+      function setActive(id) {
+        links.forEach(function (l) {
+          l.classList.toggle("active", l.getAttribute("href") === "#" + id);
+        });
+      }
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { if (e.isIntersecting) setActive(e.target.id); });
+        }, { rootMargin: "-40% 0px -55% 0px" });
+        links.forEach(function (l) {
+          var t = document.getElementById(l.getAttribute("href").slice(1));
+          if (t) io.observe(t);
+        });
+      }
+      window.addEventListener("scroll", function () {
+        if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) setActive("contacts");
+      }, { passive: true });
+      setActive("home");
+
+      // Expand / collapse all sections
+      var toggle = document.getElementById("toggle-all");
+      toggle.addEventListener("click", function () {
+        var all = Array.prototype.slice.call(document.querySelectorAll("#interests details"));
+        var shouldOpen = all.some(function (d) { return !d.open; });
+        all.forEach(function (d) { d.open = shouldOpen; });
+        toggle.textContent = shouldOpen ? "Collapse all" : "Expand all";
+      });
+    })();
   </script>
 </body>
 
